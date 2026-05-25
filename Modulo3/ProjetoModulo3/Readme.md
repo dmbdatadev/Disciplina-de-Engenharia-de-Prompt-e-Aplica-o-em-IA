@@ -21,7 +21,7 @@ https://ai.studio/apps/404c535b-ce09-43ba-b1eb-df23ba5765e4
    - **Falhas Técnicas e Fragilidades:** Mapeamento analítico de riscos e vulnerabilidades linha por linha.
    - **Refatoração:** O código limpo, moderno e otimizado na linguagem de destino, pronto para cópia ou exportação via Blob Download com a extensão correta (`.py`, `.ts`, `.go`).
 
-> Os arquivos de imagem da interface, diagramas de arquitetura de software e o link `[index.html](https://ai.studio/apps/404c535b-ce09-43ba-b1eb-df23ba5765e4)` funcional foram devidamente alocados na pasta `/docs`.
+> Os arquivos de imagem da interface e documentos da plataforma foram devidamente alocados na pasta `/docs`.
 
 ---
 
