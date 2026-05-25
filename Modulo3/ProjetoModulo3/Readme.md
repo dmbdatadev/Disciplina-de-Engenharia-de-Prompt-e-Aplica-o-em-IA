@@ -46,6 +46,8 @@ Durante o processo de design e desenvolvimento com o modelo, mapeamos três limi
 1. **Acurácia Semântica de Linguagens de Nicho Extremamente Antigas:** Embora a IA domine perfeitamente dialetos como COBOL e Fortran padrões, variações customizadas criadas internamente por empresas nas últimas décadas (sistemas proprietários altamente modificados) exigem ajustes mais finos de prompt do que o modelo base consegue deduzir de primeira.
 2. **Dependência e Custos de Tokens em Escala Industrial:** Para sistemas core volumosos (com mais de 10 milhões de linhas de código), o volume de tokens consumidos em chamadas consecutivas de API pode gerar um custo operacional (OPEX) inicial alto se a estratégia de divisão de arquivos não for bem otimizada.
 3. **O Risco do "Lock-in" Tecnológico de Modelos:** Construir a inteligência do sistema acoplada estritamente às especificidades de uma única API (como o formato de payloads do Gemini) pode criar uma dependência severa do ecossistema do fornecedor de IA, exigindo uma arquitetura futura baseada em adaptadores de LLM genéricos.
+4. 3. **API nãpo cadastrada:** Envio de emails limitados. SEm API do Google pra envio e disparo de emails instataneos.
+
 
 ---
 
