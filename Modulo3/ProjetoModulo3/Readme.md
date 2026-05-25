@@ -26,7 +26,7 @@ https://ai.studio/apps/404c535b-ce09-43ba-b1eb-df23ba5765e4
 ---
 
 ## ⚙️ Plataforma Utilizada
-* **Plataforma:** Google AI Studio & Gemini Pro Engine (Orquestrados via HTML5/Tailwind CSS/JavaScript Vanilla para a simulação do painel).
+* **Plataforma:** Google AI Studio  
 * **Justificativa da escolha:** O Google AI Studio foi selecionado devido à sua proficiência técnica incomparável em Engenharia de Software Baseada em IA (AISE). A janela de contexto estendida do modelo Gemini (capaz de processar até 2 milhões de tokens) é a única no mercado capaz de ler repositórios inteiros de sistemas monolíticos legados de uma só vez, correlacionando dependências globais sem sofrer com perda de memória contextual. Além disso, o AI Studio oferece controle cirúrgico de hiperparâmetros (como a redução da Temperatura para `0.1`), permitindo uma geração de código exata, lógica e com risco de alucinação drasticamente mitigado.
 
 ---
