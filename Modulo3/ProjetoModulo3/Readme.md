@@ -63,11 +63,17 @@ O grupo organizou suas tarefas aproveitando as forças individuais de cada integ
 ---
 
 ## 📝 Registro da Aula
-* **Data:** 11/05/2026
+* **Participantes:** Daniel de Miranda e João Victor
+*  **Data:** 11/05/2026
 * **Atividade:** Discussão crítica + mini-projeto de aplicação
 * **Local:** Laboratório de informática / Quadro branco
 * **Professor(a):** Kadidja Valéria
 
+---
+
+## 📝 Registro da Contribuintes
+* **Participantes:** Daniel de Miranda e João Victor
+  
 ---
 
 ## 🚀 Próximos Passos
