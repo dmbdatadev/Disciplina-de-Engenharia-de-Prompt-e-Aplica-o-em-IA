@@ -73,7 +73,7 @@ O grupo organizou suas tarefas aproveitando as forças individuais de cada integ
 
 ---
 
-## 📝 Registro da Contribuintes
+## 📝 Registro dos Contribuintes
 * **Participantes:** Daniel de Miranda e João Victor
   
 ---
