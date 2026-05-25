@@ -10,6 +10,8 @@ O grupo assumiu o desafio de mitigar o alto custo financeiro e o risco operacion
 ## 🖥️ Protótipo
 O protótipo consiste em uma Single-Page Application (SPA) de alta fidelidade visual que emula perfeitamente o ecossistema do Visual Studio Code em Dark Mode.
 
+https://ai.studio/apps/404c535b-ce09-43ba-b1eb-df23ba5765e4
+
 ### Como o protótipo funciona:
 1. **Interface Inicial Oculta (Retrátil):** Os recursos avançados de IA e o painel de resultados começam completamente recuados para não gerar distração no editor principal (Painel Esquerdo).
 2. **Ativação por Plugin:** Ao clicar no ícone do *CodeSurvive AI* na Activity Bar vertical esquerda, a Sidebar do plugin expande, revelando seletores de linguagem de origem (legado) e destino (futuro), além de um módulo de *Marketplace* para instalação de novas extensões de gramática.
