@@ -1,92 +1,66 @@
-# Projeto Módulo 3 – Low Code / No Code / Vibecode
+# Projeto Módulo 3 – Low Code/No Code/Vibecode
 
 ## 📌 Desafio Escolhido
-**Modernização e Transposição Não-Destrutiva de Software Legado Corporativo (CodeSurvive AI).**
+O desafio selecionado foi o desenvolvimento de um **Sistema de Triagem Inteligente de Currículos** (plataforma batizada de *NexHR.ia*). O problema central que buscamos resolver é o excesso de tempo gasto por profissionais de RH na leitura manual de currículos que frequentemente não possuem o perfil da vaga. 
 
-O grupo assumiu o desafio de mitigar o alto custo financeiro e o risco operacional do débito técnico gerado por sistemas legados indocumentados. O foco do mini-projeto foi conceber uma extensão/plugin simulada (estilo VS Code Workbench) voltada para a **Ponte de Tradução Semântica (Translation Bridge)** de códigos obsoletos (COBOL, Fortran, Assembly, PHP Antigo, C, Java) para linguagens modernas (TypeScript, Python, Go) sem alterar ou destruir o progresso do arquivo original, amparado por uma arquitetura de infraestrutura híbrida reativa (Mainframe Emulado em Nuvem vs. Cloud IDE).
+A solução proposta é um fluxo de trabalho centralizado de recebimento de candidatos onde uma Inteligência Artificial atua diretamente na triagem: a IA lê o texto do currículo (mesmo de forma não estruturada), extrai as 5 principais habilidades do candidato e gera uma pontuação (*score* percentual) de compatibilidade exata com a descrição da vaga pretendida, salvando o parecer diretamente no *card* do candidato no sistema.
 
 ---
 
 ## 🖥️ Protótipo
-O protótipo consiste em uma Single-Page Application (SPA) de alta fidelidade visual que emula perfeitamente o ecossistema do Visual Studio Code em Dark Mode.
-
-https://ai.studio/apps/404c535b-ce09-43ba-b1eb-df23ba5765e4
-
-### Como o protótipo funciona:
-1. **Interface Inicial Oculta (Retrátil):** Os recursos avançados de IA e o painel de resultados começam completamente recuados para não gerar distração no editor principal (Painel Esquerdo).
-2. **Ativação por Plugin:** Ao clicar no ícone do *CodeSurvive AI* na Activity Bar vertical esquerda, a Sidebar do plugin expande, revelando seletores de linguagem de origem (legado) e destino (futuro), além de um módulo de *Marketplace* para instalação de novas extensões de gramática.
-3. **Mapeamento de Infraestrutura Condicional:** O sistema altera dinamicamente sua telemetria. Se o usuário injetar ou importar linguagens como COBOL ou Fortran, a interface ativa o módulo *Mainframe Emulado em Nuvem [ONLINE]*. Caso escolha linguagens web como PHP ou Java, o status altera-se para *Cloud IDE Core*.
-4. **Análise e Transposição Não-Destrutiva (Split-Screen):** Ao disparar a IA, a tela divide-se em um layout simétrico 50/50. O código antigo permanece intocado à esquerda. À direita, o usuário navega por três abas semânticas funcionais:
-   - **Explicação do Código:** Engenharia reversa conceitual das regras de negócio.
-   - **Falhas Técnicas e Fragilidades:** Mapeamento analítico de riscos e vulnerabilidades linha por linha.
-   - **Refatoração:** O código limpo, moderno e otimizado na linguagem de destino, pronto para cópia ou exportação via Blob Download com a extensão correta (`.py`, `.ts`, `.go`).
-
-> Os arquivos de imagem da interface e documentos da plataforma foram devidamente alocados na pasta `/docs`.
+- **Acesso à Aplicação:** O protótipo é um MVP 100% funcional, navegável e responsivo.
+- **Como o protótipo funciona:** 
+  1. **Autenticação e Hub:** O usuário inicia em uma tela de Login/Cadastro com design moderno (Glassmorphism), criando um perfil que é refletido no dashboard.
+  2. **Dashboard de Vagas:** Visualização e criação de novas oportunidades de emprego.
+  3. **Integração Vibecode (O Motor da IA):** Ao adicionar um candidato a uma vaga, o usuário conta com uma zona de *Drag & Drop* para arquivos textuais. A IA integrada interpreta os dados e retorna as habilidades e o *score* de aderência.
+  4. **Pipeline Kanban:** Os candidatos triados viram "cards" que podem ser arrastados livremente (*Drag & Drop*) pelas etapas do processo seletivo (Novos, Em Análise, Entrevistas, Aprovados).
+  5. **Comunicação e Integrações:** Tela de configuração com hub de atalhos para plataformas externas (LinkedIn, Catho, Empregare, Gupy) e função integrada para envio/recebimento simulado de e-mails para comunicação direta com os talentos.
+> Coloque os arquivos de imagem ou PDF na pasta `/docs`. *(Nota: Adicionar os prints das telas do sistema nesta pasta do repositório).*
 
 ---
 
 ## ⚙️ Plataforma Utilizada
-* **Plataforma:** Google AI Studio  
-* **Justificativa da escolha:** O Google AI Studio foi selecionado devido à sua proficiência técnica incomparável em Engenharia de Software Baseada em IA (AISE). A janela de contexto estendida do modelo Gemini (capaz de processar até 2 milhões de tokens) é a única no mercado capaz de ler repositórios inteiros de sistemas monolíticos legados de uma só vez, correlacionando dependências globais sem sofrer com perda de memória contextual. Além disso, o AI Studio oferece controle cirúrgico de hiperparâmetros (como a redução da Temperatura para `0.1`), permitindo uma geração de código exata, lógica e com risco de alucinação drasticamente mitigado.
+- **Nome da plataforma:** Gemini Canvas. 
+- **Justificativa da escolha:** O Gemini Canvas foi selecionado para eliminar tarefas manuais e centralizar os fluxos de trabalho do RH de forma visual. A escolha por esse ecossistema visou comprovar que o desenvolvimento moderno permite transformar ideias complexas em soluções práticas sem barreiras técnicas.
 
 ---
 
 ## ✅ Vantagens Identificadas
-O uso da abordagem de prototipagem rápida e desenvolvimento guiado por IA ("Vibecode") trouxe três vantagens competitivas claras:
-
-1. **Protótipo de Alta Fidelidade em Tempo Recorde:** A capacidade de conceber um ecossistema complexo (Split-screen, gerenciamento de estado de arquivos e transições de tela) em poucas horas, permitindo focar na experiência do usuário (UX) e na validação da proposta de valor de negócios antes de gastar com horas de engenharia full-stack de backend.
-2. **Simetria de Entrada e Saída (Arquivos e Dados):** A implementação facilitada de leitores de arquivo nativos (`FileReader`) e geradores de downloads assíncronos (`Blobs`) via JavaScript Vanilla provou que soluções baseadas em IA conseguem simular comportamentos de ferramentas locais complexas de forma fluida e portável.
-3. **Mitigação do Risco Técnico de Migração:** A abordagem metodológica provou visualmente que é possível automatizar tarefas pesadas de engenharia reversa que drenavam até 42% da semana de trabalho dos desenvolvedores, convertendo linhas obsoletas em ativos financeiros modernos sem o risco do "Big Bang" (substituição destrutiva).
+Com base na aplicação prática e no conteúdo da disciplina, listamos as seguintes vantagens da abordagem adotada:
+1. **Validação rápida de ideias:** Possibilidade de desenvolver e testar o MVP (*Minimum Viable Product*) da plataforma NexHR.ia em curtíssimo prazo.
+2. **Automação de processos:** Capacidade de eliminar fluxos internos repetitivos (como a leitura humana inicial de currículos).
+3. **Autonomia:** Permite que equipes não-técnicas (profissionais de RH, neste caso) possuam o controle do fluxo de dados.
 
 ---
 
 ## ⚠️ Limitações Encontradas
-Durante o processo de design e desenvolvimento com o modelo, mapeamos três limitações na abordagem:
-
-1. **Acurácia Semântica de Linguagens de Nicho Extremamente Antigas:** Embora a IA domine perfeitamente dialetos como COBOL e Fortran padrões, variações customizadas criadas internamente por empresas nas últimas décadas (sistemas proprietários altamente modificados) exigem ajustes mais finos de prompt do que o modelo base consegue deduzir de primeira.
-2. **Dependência e Custos de Tokens em Escala Industrial:** Para sistemas core volumosos (com mais de 10 milhões de linhas de código), o volume de tokens consumidos em chamadas consecutivas de API pode gerar um custo operacional (OPEX) inicial alto se a estratégia de divisão de arquivos não for bem otimizada.
-3. **O Risco do "Lock-in" Tecnológico de Modelos:** Construir a inteligência do sistema acoplada estritamente às especificidades de uma única API (como o formato de payloads do Gemini) pode criar uma dependência severa do ecossistema do fornecedor de IA, exigindo uma arquitetura futura baseada em adaptadores de LLM genéricos.
-4. 3. **API nãpo cadastrada:** Envio de emails limitados. SEm API do Google pra envio e disparo de emails instataneos.
-
-
+Durante a concepção técnica, detectamos limitações inerentes às arquiteturas Low/No Code:
+1. **Escalabilidade:** Dificuldade em garantir performance caso a plataforma precise processar milhões de acessos e currículos simultâneos.
+2. **Customização profunda limitada:** Restrições para implementar regras de negócio ou lógicas arquiteturais profundamente customizadas sem recorrer ao código tradicional.
+3. **Dependência Estrutural:** Risco de ficar refém das políticas e precificações das plataformas terceiras.
+4. **Falta de Compatibilidade Simultanea:** Risco de ficar incompativel com plataformas mobile.
+5. **IA Generativa Limitada:** Plataforma de Low Code não compatível com o esperado previsto pelos criadores da plataforma.
 ---
 
 ## 📚 Reflexão Crítica
-Para contornar as limitações identificadas e transformar os riscos em diferenciais de arquitetura, o grupo adotou soluções criativas e robustas:
-* **Mitigação de Alucinações via Rastreabilidade Coercitiva:** Forçamos o modelo, por meio de engenharia de prompts rigorosa (*Few-Shot* e instruções sistêmicas restritivas), a associar obrigatoriamente toda falha técnica ou regra de negócio identificada às suas respectivas linhas de código de origem no painel esquerdo. Se a IA não puder citar o número da linha de origem, a informação não é exibida.
-* **Criação da Aba de Marketplace para Modularização:** Para resolver a barreira de linguagens de nicho sem inflar o tamanho do modelo core, propusemos o conceito de "Marketplace de Extensões". O usuário baixa pequenos pacotes de tradução específicos (ex: tradutor ABAP ou RPG). Isso atualiza dinamicamente o banco de dados de contexto do plugin e expande o escopo do software sob demanda, aliviando o custo de processamento geral e viabilizando um modelo de monetização escalável.
+Para superar as barreiras de customização profunda, o grupo aplicou com sucesso o novo paradigma do **Vibecode**. Quando a interface visual (fluxo Kanban) atingiu seu limite ao tentar ler dados não estruturados de currículos, utilizamos Inteligência Artificial para gerar o "código leve" de análise (JSON estruturado com *scores* e *skills*). A eficácia com que os prompts de IA foram usados resolveu bloqueios visuais da ferramenta. Além disso, desenvolvemos o senso crítico para contornar restrições arquiteturais criando "mecanismos de *fallback*" (simulações de IA em caso de queda de API) garantindo que a aplicação seja sempre funcional.
 
 ---
 
 ## 👥 Colaboração
-O grupo organizou suas tarefas aproveitando as forças individuais de cada integrante, estruturando o fluxo de desenvolvimento em um pipeline síncrono:
-* **Análise de Negócios e Modelagem Financeira:** Responsável por coletar os dados de mercado (Gartner, McKinsey, Stripe, CISQ), formular a narrativa do Storytelling corporativo (O Caso do Lucas e do Contrato de R$ 2 Milhões) e estruturar a equação de acúmulo de Débito Técnico.
-* **Engenharia de Prompts e Arquitetura de IA:** Focou no trabalho de pesquisa no Google AI Studio, calbrando a temperatura do Gemini, refinando as instruções de sistema (*System Prompts*) e testando os payloads com códigos reais legados para garantir que as três abas de saída fossem geradas perfeitamente.
-* **UI/UX e Desenvolvimento Frontend (Vibecode):** Liderou a construção do layout simulado do VS Code, garantindo a integração dos estilos Tailwind CSS, os ícones dinâmicos do Lucide, as lógicas de clique dos menus retráteis, as automações de Importação/Exportação e a simulação reativa do Mainframe em Nuvem.
+O projeto atendeu às regras de engajamento propostas (grupos de até 3 estudantes). A divisão de responsabilidades foi estruturada para garantir a organização lógica das ideias:
+* **Daniel de Miranda (Arquitetura e Interface):** Responsável pela organização visual lógica do fluxo de dados (*Drag & Drop* no Kanban) e design do sistema.
+* **João Victor (Engenharia de Prompt & Vibecode):** Focado na construção estrutural dos prompts que obrigaram a IA a devolver as informações mastigadas em formato estruturado, gerando as pontuações e resumos. (https://github.com/donratinho)
 
 ---
 
-## 📝 Registro da Aula
-* **Participantes:** Daniel de Miranda e João Victor
-*  **Data:** 11/05/2026
-* **Atividade:** Discussão crítica + mini-projeto de aplicação
-* **Local:** Laboratório de informática / Quadro branco
-* **Professor(a):** Kadidja Valéria
+## 📝 Registro da Aula 
+Atividade: Discussão crítica + mini-projeto de aplicação  
+Local: Laboratório de informática 
+Professor(a): Kadidja Valéria  
 
----
-
-## 📝 Registro dos Contribuintes
-* **Participantes:** Daniel de Miranda e João Victor (https://github.com/donratinho)
-  
 ---
 
 ## 🚀 Próximos Passos
-Como evolução natural deste mini-projeto para o **Projeto Final da Unidade 3**, o grupo planeja:
-* **Camada Real de Integração via Extensão de Mercado:** Evoluir a SPA simulada em HTML para o manifesto oficial de extensões do VS Code (`package.json` e TypeScript), permitindo que o plugin seja instalado e testado diretamente dentro da IDE real através de chamadas ativas de API de produção.
-* **Motor Ativo de Sugestão de Wrappers (Design Patterns):** Aprimorar o algoritmo para gerar, além do código limpo, classes prontas do padrão *Adapter* ou *Facade* para encapsular o código antigo de forma modular, permitindo que novos microsserviços modernos interajam com o ecossistema legado com risco zero de regressão sistêmica.
-
-## 🚀 Próximos Passos
-
-- Melhorias sugeridas para o protótipo.
-
-- Possíveis evoluções para o Projeto Final da Unidade 3.
+- **Melhorias sugeridas para o protótipo:** Implementar um extrator de texto de servidor para leitura nativa profunda de PDFs muito pesados ou rasurados, sem depender exclusivamente da colagem de texto.
+- **Possíveis evoluções para o Projeto Final:** Expansão da IA para atuar não apenas como recrutadora de triagem, mas também gerando roteiros de entrevistas personalizados baseados nas deficiências detectadas no currículo de cada candidato aprovado na fase inicial.
