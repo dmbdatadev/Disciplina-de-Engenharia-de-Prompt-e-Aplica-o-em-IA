@@ -8,6 +8,9 @@ A solução proposta é um fluxo de trabalho centralizado de recebimento de cand
 ---
 
 ## 🖥️ Protótipo
+
+Protótipo: https://gemini.google.com/share/19373794cd84
+
 - **Acesso à Aplicação:** O protótipo é um MVP 100% funcional, navegável e responsivo.
 - **Como o protótipo funciona:** 
   1. **Autenticação e Hub:** O usuário inicia em uma tela de Login/Cadastro com design moderno (Glassmorphism), criando um perfil que é refletido no dashboard.
